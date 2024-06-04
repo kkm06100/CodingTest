@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+
+SELECT NAME, COUNT(NAME) AS 'COUNT'-- COUNT(NAME) : NAME이 쓰인 값을 세어줌
+FROM ANIMAL_INS
+GROUP BY NAME -- 같은 값을 가진 행끼리 하나의 그룹으로 뭉쳐준다.
+HAVING COUNT(NAME) > 1 
+-- GROUP에 조건을 줄 때는 WHERE이 아닌 COUNT를 사용한다.
+-- COUNT, SUM, AVG를 선언했을 때 그 안에 값을 넣어준다.
+ORDER BY NAME
