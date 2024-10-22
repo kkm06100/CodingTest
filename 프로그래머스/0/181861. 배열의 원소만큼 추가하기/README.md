@@ -1,10 +1,10 @@
 # [level 0] 배열의 원소만큼 추가하기 - 181861 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181861) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181861?language=javascript) 
 
 ### 성능 요약
 
-메모리: 72.7 MB, 시간: 0.04 ms
+메모리: 37.6 MB, 시간: 0.73 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 06월 07일 23:01:28
+2024년 10월 22일 15:34:25
 
 ### 문제 설명
 
