@@ -1,22 +1,19 @@
 N = int(input())
+count = 0
 
-arr = list()
+col = [False] * N
+diag1 = [False] * (2 * N)
+diag2 = [False] * (2 * N)
+def backtrack(row):
+    global count
+    if row == N:
+        count += 1
+        return
+    for c in range(N):
+        if not col[c] and not diag1[row + c] and not diag2[row - c + N - 1]:
+            col[c] = diag1[row + c] = diag2[row - c + N - 1] = True
+            backtrack(row + 1)
+            col[c] = diag1[row + c] = diag2[row - c + N - 1] = False
 
-arr.append(0)
-arr.append(1)
-arr.append(0)
-arr.append(0)
-arr.append(2)
-arr.append(10)
-arr.append(4)
-arr.append(40)
-arr.append(92)
-arr.append(352)
-arr.append(724)
-arr.append(2680)
-arr.append(14200)
-arr.append(73712)
-arr.append(365596)
-arr.append(2279184)
-
-print(arr[N])
+backtrack(0)
+print(count)
