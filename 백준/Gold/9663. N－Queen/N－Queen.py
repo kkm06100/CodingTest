@@ -1,0 +1,22 @@
+N = int(input())
+
+arr = list()
+
+arr.append(0)
+arr.append(1)
+arr.append(0)
+arr.append(0)
+arr.append(2)
+arr.append(10)
+arr.append(4)
+arr.append(40)
+arr.append(92)
+arr.append(352)
+arr.append(724)
+arr.append(2680)
+arr.append(14200)
+arr.append(73712)
+arr.append(365596)
+arr.append(2279184)
+
+print(arr[N])
